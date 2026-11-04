@@ -1,0 +1,29 @@
+# Restricted inputs and derived local artifacts
+private_data/
+data/
+results/
+outputs/
+*.csv
+*.xlsx
+*.xls
+*.parquet
+*.shp
+*.shx
+*.dbf
+*.prj
+*.gpkg
+*.tif
+*.tiff
+*.npz
+*.npy
+*.ipynb
+# Python / environment
+.venv/
+__pycache__/
+*.py[cod]
+*.egg-info/
+.pytest_cache/
+.env
+
+build/
+dist/
