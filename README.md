@@ -36,6 +36,16 @@ python -m pip install -e ".[report,spatial,dbcv,test]"
 
 Direct dependencies are pinned in [pyproject.toml](pyproject.toml); [requirements.txt](requirements.txt) contains core dependencies. Package purposes are documented in [Python Dependencies](docs/python_dependencies.md). Runtime metadata records actual installed versions.
 
+## Synthetic demonstration
+
+A fully synthetic executable example is provided in [examples/synthetic_demo](examples/synthetic_demo/README.md). It generates independent concentrations and abstract spatial supports, then runs the existing modules without original study inputs:
+
+```bash
+python examples/synthetic_demo/run.py --output results/synthetic_demo --artificial-validation
+```
+
+This demonstration tests workflow execution and consistency. It does not reproduce the manuscript's numerical results or represent the study area. See the example guide for expected outputs and scope.
+
 ## Execution
 
 All commands run from the repository root after installation. Inputs and outputs remain local. Full commands for every independent folder are given in [Execution Guide](docs/execution.md).

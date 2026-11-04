@@ -1,0 +1,435 @@
+{
+  "scope": "Synthetic execution reference only; not manuscript results. Floating-point values may vary across environments.",
+  "verification": {
+    "synthetic": true,
+    "model_rows": 9,
+    "paired_search_audits": 24,
+    "requests_per_optimizer_run": 416,
+    "capture_rows": 33,
+    "processed_input_sha256": "461735fa3ec633aa7a59922a2758c3f58f43caf4add8d716618702a745b518ed",
+    "artificial_validation_executed": true,
+    "scope": "Successful workflow execution on synthetic inputs; no claim about manuscript numerical results."
+  },
+  "environment": {
+    "python": "3.12.14 (main, Aug 25 2026, 14:00:49) [Clang 22.1.3 ]",
+    "platform": "Linux-6.18.57-x86_64-with-glibc2.39",
+    "packages": {
+      "numpy": "2.3.5",
+      "pandas": "2.2.3",
+      "scipy": "1.17.0",
+      "scikit-learn": "1.8.0",
+      "threadpoolctl": "3.6.0",
+      "matplotlib": "3.10.8",
+      "geopandas": "1.2.0",
+      "shapely": "2.2.0",
+      "pyproj": "3.8.0",
+      "pyogrio": "0.13.0",
+      "hdbscan": "0.8.44",
+      "pytest": "9.2.0"
+    }
+  },
+  "validation_summary": [
+    {
+      "algorithm": "kmeans",
+      "configuration": "baseline",
+      "K": 3,
+      "minimum_cluster_size": 60,
+      "coverage": 1.0,
+      "noise_fraction": 0.0,
+      "noise_count": 0,
+      "assigned_count": 180,
+      "SI": 0.7994987375,
+      "DBI": 0.285342059,
+      "CHI": 1736.2966728858,
+      "distance_squared": 0.0,
+      "constraint_violation": 0,
+      "status": "feasible",
+      "DBCV": null,
+      "DBCV_status": null
+    },
+    {
+      "algorithm": "kmeans",
+      "configuration": "mopso",
+      "K": 3,
+      "minimum_cluster_size": 60,
+      "coverage": 1.0,
+      "noise_fraction": 0.0,
+      "noise_count": 0,
+      "assigned_count": 180,
+      "SI": 0.7994987375,
+      "DBI": 0.285342059,
+      "CHI": 1736.2966728858,
+      "distance_squared": 0.0,
+      "constraint_violation": 0,
+      "status": "feasible",
+      "DBCV": null,
+      "DBCV_status": null
+    },
+    {
+      "algorithm": "kmeans",
+      "configuration": "nsga2",
+      "K": 3,
+      "minimum_cluster_size": 60,
+      "coverage": 1.0,
+      "noise_fraction": 0.0,
+      "noise_count": 0,
+      "assigned_count": 180,
+      "SI": 0.7994987375,
+      "DBI": 0.285342059,
+      "CHI": 1736.2966728858,
+      "distance_squared": 0.0,
+      "constraint_violation": 0,
+      "status": "feasible",
+      "DBCV": null,
+      "DBCV_status": null
+    },
+    {
+      "algorithm": "dbscan",
+      "configuration": "baseline",
+      "K": 3,
+      "minimum_cluster_size": 60,
+      "coverage": 1.0,
+      "noise_fraction": 0.0,
+      "noise_count": 0,
+      "assigned_count": 180,
+      "SI": 0.7994987375,
+      "DBI": 0.285342059,
+      "CHI": 1736.2966728858,
+      "distance_squared": null,
+      "constraint_violation": 0,
+      "status": "feasible",
+      "DBCV": 0.7821815819,
+      "DBCV_status": "valid"
+    },
+    {
+      "algorithm": "dbscan",
+      "configuration": "mopso",
+      "K": 3,
+      "minimum_cluster_size": 55,
+      "coverage": 0.95,
+      "noise_fraction": 0.05,
+      "noise_count": 9,
+      "assigned_count": 171,
+      "SI": 0.8113470532,
+      "DBI": 0.2690877101,
+      "CHI": 1870.4963024519,
+      "distance_squared": 0.0005093502,
+      "constraint_violation": 0,
+      "status": "feasible",
+      "DBCV": 0.8198721827,
+      "DBCV_status": "valid"
+    },
+    {
+      "algorithm": "dbscan",
+      "configuration": "nsga2",
+      "K": 3,
+      "minimum_cluster_size": 55,
+      "coverage": 0.95,
+      "noise_fraction": 0.05,
+      "noise_count": 9,
+      "assigned_count": 171,
+      "SI": 0.8113470532,
+      "DBI": 0.2690877101,
+      "CHI": 1870.4963024519,
+      "distance_squared": 0.0005093502,
+      "constraint_violation": 0,
+      "status": "feasible",
+      "DBCV": 0.8198721827,
+      "DBCV_status": "valid"
+    },
+    {
+      "algorithm": "optics",
+      "configuration": "baseline",
+      "K": 3,
+      "minimum_cluster_size": 59,
+      "coverage": 0.9944444444,
+      "noise_fraction": 0.0055555556,
+      "noise_count": 1,
+      "assigned_count": 179,
+      "SI": 0.8011903954,
+      "DBI": 0.283194309,
+      "CHI": 1751.1333259238,
+      "distance_squared": null,
+      "constraint_violation": 0,
+      "status": "feasible",
+      "DBCV": 0.8176008709,
+      "DBCV_status": "valid"
+    },
+    {
+      "algorithm": "optics",
+      "configuration": "mopso",
+      "K": 3,
+      "minimum_cluster_size": 55,
+      "coverage": 0.95,
+      "noise_fraction": 0.05,
+      "noise_count": 9,
+      "assigned_count": 171,
+      "SI": 0.8102926788,
+      "DBI": 0.2711455611,
+      "CHI": 1848.5689354246,
+      "distance_squared": 0.0,
+      "constraint_violation": 0,
+      "status": "feasible",
+      "DBCV": 0.8340193529,
+      "DBCV_status": "valid"
+    },
+    {
+      "algorithm": "optics",
+      "configuration": "nsga2",
+      "K": 3,
+      "minimum_cluster_size": 56,
+      "coverage": 0.95,
+      "noise_fraction": 0.05,
+      "noise_count": 9,
+      "assigned_count": 171,
+      "SI": 0.8095744957,
+      "DBI": 0.2714477153,
+      "CHI": 1845.1993609767,
+      "distance_squared": 0.0048800033,
+      "constraint_violation": 0,
+      "status": "feasible",
+      "DBCV": 0.8192277217,
+      "DBCV_status": "valid"
+    }
+  ],
+  "occurrence_capture": [
+    {
+      "model": "kmeans_baseline",
+      "nominal_budget_percent": 5.0,
+      "actual_area_percent": 0.0,
+      "capture_percent": 0.0,
+      "eligible_occurrences": 40
+    },
+    {
+      "model": "kmeans_baseline",
+      "nominal_budget_percent": 10.0,
+      "actual_area_percent": 0.0,
+      "capture_percent": 0.0,
+      "eligible_occurrences": 40
+    },
+    {
+      "model": "kmeans_baseline",
+      "nominal_budget_percent": 20.0,
+      "actual_area_percent": 0.0,
+      "capture_percent": 0.0,
+      "eligible_occurrences": 40
+    },
+    {
+      "model": "kmeans_mopso",
+      "nominal_budget_percent": 5.0,
+      "actual_area_percent": 0.0,
+      "capture_percent": 0.0,
+      "eligible_occurrences": 40
+    },
+    {
+      "model": "kmeans_mopso",
+      "nominal_budget_percent": 10.0,
+      "actual_area_percent": 0.0,
+      "capture_percent": 0.0,
+      "eligible_occurrences": 40
+    },
+    {
+      "model": "kmeans_mopso",
+      "nominal_budget_percent": 20.0,
+      "actual_area_percent": 0.0,
+      "capture_percent": 0.0,
+      "eligible_occurrences": 40
+    },
+    {
+      "model": "kmeans_nsga2",
+      "nominal_budget_percent": 5.0,
+      "actual_area_percent": 0.0,
+      "capture_percent": 0.0,
+      "eligible_occurrences": 40
+    },
+    {
+      "model": "kmeans_nsga2",
+      "nominal_budget_percent": 10.0,
+      "actual_area_percent": 0.0,
+      "capture_percent": 0.0,
+      "eligible_occurrences": 40
+    },
+    {
+      "model": "kmeans_nsga2",
+      "nominal_budget_percent": 20.0,
+      "actual_area_percent": 0.0,
+      "capture_percent": 0.0,
+      "eligible_occurrences": 40
+    },
+    {
+      "model": "dbscan_baseline",
+      "nominal_budget_percent": 5.0,
+      "actual_area_percent": 0.0,
+      "capture_percent": 0.0,
+      "eligible_occurrences": 40
+    },
+    {
+      "model": "dbscan_baseline",
+      "nominal_budget_percent": 10.0,
+      "actual_area_percent": 0.0,
+      "capture_percent": 0.0,
+      "eligible_occurrences": 40
+    },
+    {
+      "model": "dbscan_baseline",
+      "nominal_budget_percent": 20.0,
+      "actual_area_percent": 0.0,
+      "capture_percent": 0.0,
+      "eligible_occurrences": 40
+    },
+    {
+      "model": "dbscan_mopso",
+      "nominal_budget_percent": 5.0,
+      "actual_area_percent": 0.0,
+      "capture_percent": 0.0,
+      "eligible_occurrences": 40
+    },
+    {
+      "model": "dbscan_mopso",
+      "nominal_budget_percent": 10.0,
+      "actual_area_percent": 0.0,
+      "capture_percent": 0.0,
+      "eligible_occurrences": 40
+    },
+    {
+      "model": "dbscan_mopso",
+      "nominal_budget_percent": 20.0,
+      "actual_area_percent": 0.0,
+      "capture_percent": 0.0,
+      "eligible_occurrences": 40
+    },
+    {
+      "model": "dbscan_nsga2",
+      "nominal_budget_percent": 5.0,
+      "actual_area_percent": 0.0,
+      "capture_percent": 0.0,
+      "eligible_occurrences": 40
+    },
+    {
+      "model": "dbscan_nsga2",
+      "nominal_budget_percent": 10.0,
+      "actual_area_percent": 0.0,
+      "capture_percent": 0.0,
+      "eligible_occurrences": 40
+    },
+    {
+      "model": "dbscan_nsga2",
+      "nominal_budget_percent": 20.0,
+      "actual_area_percent": 0.0,
+      "capture_percent": 0.0,
+      "eligible_occurrences": 40
+    },
+    {
+      "model": "optics_baseline",
+      "nominal_budget_percent": 5.0,
+      "actual_area_percent": 0.0,
+      "capture_percent": 0.0,
+      "eligible_occurrences": 40
+    },
+    {
+      "model": "optics_baseline",
+      "nominal_budget_percent": 10.0,
+      "actual_area_percent": 0.0,
+      "capture_percent": 0.0,
+      "eligible_occurrences": 40
+    },
+    {
+      "model": "optics_baseline",
+      "nominal_budget_percent": 20.0,
+      "actual_area_percent": 0.0,
+      "capture_percent": 0.0,
+      "eligible_occurrences": 40
+    },
+    {
+      "model": "optics_mopso",
+      "nominal_budget_percent": 5.0,
+      "actual_area_percent": 0.0,
+      "capture_percent": 0.0,
+      "eligible_occurrences": 40
+    },
+    {
+      "model": "optics_mopso",
+      "nominal_budget_percent": 10.0,
+      "actual_area_percent": 0.0,
+      "capture_percent": 0.0,
+      "eligible_occurrences": 40
+    },
+    {
+      "model": "optics_mopso",
+      "nominal_budget_percent": 20.0,
+      "actual_area_percent": 0.0,
+      "capture_percent": 0.0,
+      "eligible_occurrences": 40
+    },
+    {
+      "model": "optics_nsga2",
+      "nominal_budget_percent": 5.0,
+      "actual_area_percent": 0.0,
+      "capture_percent": 0.0,
+      "eligible_occurrences": 40
+    },
+    {
+      "model": "optics_nsga2",
+      "nominal_budget_percent": 10.0,
+      "actual_area_percent": 0.0,
+      "capture_percent": 0.0,
+      "eligible_occurrences": 40
+    },
+    {
+      "model": "optics_nsga2",
+      "nominal_budget_percent": 20.0,
+      "actual_area_percent": 0.0,
+      "capture_percent": 0.0,
+      "eligible_occurrences": 40
+    },
+    {
+      "model": "pca",
+      "nominal_budget_percent": 5.0,
+      "actual_area_percent": 4.3956043956,
+      "capture_percent": 2.5,
+      "eligible_occurrences": 40
+    },
+    {
+      "model": "pca",
+      "nominal_budget_percent": 10.0,
+      "actual_area_percent": 9.4376212023,
+      "capture_percent": 5.0,
+      "eligible_occurrences": 40
+    },
+    {
+      "model": "pca",
+      "nominal_budget_percent": 20.0,
+      "actual_area_percent": 19.9956905839,
+      "capture_percent": 12.5,
+      "eligible_occurrences": 40
+    },
+    {
+      "model": "cn",
+      "nominal_budget_percent": 5.0,
+      "actual_area_percent": 0.0,
+      "capture_percent": 0.0,
+      "eligible_occurrences": 40
+    },
+    {
+      "model": "cn",
+      "nominal_budget_percent": 10.0,
+      "actual_area_percent": 0.0,
+      "capture_percent": 0.0,
+      "eligible_occurrences": 40
+    },
+    {
+      "model": "cn",
+      "nominal_budget_percent": 20.0,
+      "actual_area_percent": 0.0,
+      "capture_percent": 0.0,
+      "eligible_occurrences": 40
+    }
+  ],
+  "checks": {
+    "existing_test_suite": "41 passed",
+    "artificial_censoring_skipped": [],
+    "capture_budget_ceilings": "passed",
+    "capture_monotonicity": "passed",
+    "deterministic_input_regeneration": "passed"
+  }
+}
