@@ -1,0 +1,44 @@
+{
+  "elements": [
+    "Cu",
+    "Au",
+    "Mo",
+    "Bi",
+    "Pb",
+    "Zn"
+  ],
+  "units": {
+    "Cu": "ppm",
+    "Au": "ppb",
+    "Mo": "ppm",
+    "Bi": "ppm",
+    "Pb": "ppm",
+    "Zn": "ppm"
+  },
+  "input_state": "positive_processed_concentrations",
+  "methods": [
+    "kmeans",
+    "dbscan",
+    "optics"
+  ],
+  "k_values": [
+    3,
+    4,
+    5,
+    6,
+    7,
+    8
+  ],
+  "seeds": [
+    42,
+    142,
+    242
+  ],
+  "population": 16,
+  "generations": 25,
+  "silhouette_subset_size": 600,
+  "baseline_n_init": 30,
+  "expected_samples": 2715,
+  "dbcv": true,
+  "status": "REIMPLEMENTATION_NOT_VALIDATED_ON_MANUSCRIPT_DATA"
+}

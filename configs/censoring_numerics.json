@@ -1,0 +1,11 @@
+{
+  "trees": 100,
+  "depth": 8,
+  "seed": 42,
+  "tolerance": 0.00001,
+  "maximum_iterations": 100,
+  "initialization_fraction": 1.0,
+  "residual_scale": "out_of_bag_rmse",
+  "minimum_scale": 0.00000001,
+  "minimum_observed": 30
+}
